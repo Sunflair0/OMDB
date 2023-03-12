@@ -1,0 +1,122 @@
+body {
+	background-color: black;
+	/* background pic from PNGio.com */
+	background-image: url("./assets/theatre.png");
+	background-position-y: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: #f6ff00e8;
+	transition: all .3s linear;
+
+}
+
+.projectors {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left,
+.right {
+	position: relative;
+	top: 1.5rem;
+	width: 7%;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	right: 0;
+	transform: scaleX(-1);
+}
+
+.projectors img {
+	width: 100%;
+}
+
+.choiceBar {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 5rem;
+	margin: .3rem;
+	padding: 10px;
+	background-color: rgba(53, 51, 51, 0.726);
+}
+
+.type,
+.year {
+	padding-left: 5%;
+}
+
+input,
+select,
+option {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	height: 25px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input::placeholder {
+	text-align: center;
+	color: black;
+}
+
+.choices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.searchButton {
+	position: relative;
+	margin: 13% auto 0;
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #f6ff00e8;
+	background-color: black;
+	border-color: rgb(224, 4, 4);
+	border-radius: 5px;
+	outline: 1px rgba(128, 128, 128, 0.533) solid;
+	outline-offset: -4px;
+	height: 40px;
+	width: 85%;
+	cursor: pointer;
+	transition: all .2s linear;
+
+}
+
+button:hover {
+	background-color: rgb(49, 49, 49);
+	outline: 1px #f6ff00e8 solid;
+
+}
+
+.img-box {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.movieBox {
+	max-width: min-content;
+	top: 7rem;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgb(244, 243, 168);
+	display: inline-block;
+	margin: 5px;
+	border: rgb(173, 8, 8) solid 2px;
+	outline: 1px rgba(128, 128, 128, 0.533) solid;
+	outline-offset: -4px;
+	text-align: center;
+
+}
