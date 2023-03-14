@@ -7,7 +7,6 @@ body {
 	background-size: 100%;
 	color: #f6ff00e8;
 	transition: all .3s linear;
-
 }
 
 .projectors {
@@ -73,7 +72,7 @@ input::placeholder {
 
 .searchButton {
 	position: relative;
-	margin: 13% auto 0;
+	margin: 6rem auto 0;
 }
 
 button {
@@ -90,13 +89,11 @@ button {
 	width: 85%;
 	cursor: pointer;
 	transition: all .2s linear;
-
 }
 
 button:hover {
 	background-color: rgb(49, 49, 49);
 	outline: 1px #f6ff00e8 solid;
-
 }
 
 .img-box {
@@ -118,5 +115,10 @@ button:hover {
 	outline: 1px rgba(128, 128, 128, 0.533) solid;
 	outline-offset: -4px;
 	text-align: center;
+}
 
+@media screen and (min-width: 768px) {
+	.searchButton {
+		margin: 13% auto 0;
+	}
 }
