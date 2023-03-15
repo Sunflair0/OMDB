@@ -7,6 +7,13 @@ body {
 	background-size: 100%;
 	color: #f6ff00e8;
 	transition: all .3s linear;
+	min-width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 .projectors {
@@ -32,6 +39,7 @@ body {
 
 .projectors img {
 	width: 100%;
+	margin: 0 10px;
 }
 
 .choiceBar {
@@ -39,9 +47,9 @@ body {
 	flex-direction: column;
 	position: relative;
 	top: 5rem;
-	margin: .3rem;
+	margin: .3rem 0;
 	padding: 10px;
-	background-color: rgba(53, 51, 51, 0.726);
+	background-color: rgba(53, 51, 51, 0.7);
 }
 
 .type,
